@@ -17,6 +17,19 @@ from copy import deepcopy
 
 
 class FunctionalANOVA(object):
+    """__init__
+        Args:
+            X (pd.DataFrame): DataFrame with the features.
+            y (pd.DataFrame): DataFrame with the response values. DataFrame dimension shuld be 1-dim.
+            search_spaces (Optional[np.ndarray], optional): The ranges of features. Ex:[[MIN, MAX], ..., [MIN, MAX]] ndarray. Defaults to None.
+            degree (int, optional): Combination order of features. Defaults to 1.
+            n_tree (int, optional): Number of trees in the forest to be fit. Defaults to 32.
+            max_depth (int, optional): Maximal depth of each tree in the forest. Defaults to 64.
+            min_samples_leaf (int, optional): Minimum number of samples required in a leaf. Defaults to 1.
+            min_samples_split (int, optional): Minimum number of samples required to attempt to split . Defaults to 2.
+            seed (int, optional): Seed for the forests randomness. Defaults to 0.
+    """
+
     def __init__(
         self,
         X: pd.DataFrame,
@@ -92,6 +105,14 @@ class FunctionalANOVA(object):
         return self._importances
 
     def get_importances(self, features: Tuple[int, ...]) -> Tuple[float, float]:
+        """Use to calculate the product set.
+
+        Args:
+            features (Tuple[int, ...]): The input is get_importances((0,1)), the contribution of the product set of the 0th index and 1st index features is calculated.
+
+        Returns:
+            Tuple[float, float]: return (importance_value, importance_error) tuple.
+        """        
         return self._f.get_importance(features)
 
 
