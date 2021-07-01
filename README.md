@@ -29,7 +29,7 @@ y = pd.DataFrame(sklearn.datasets.load_iris()['target'],columns=['species'])
 
 # run analysis of variance
 anova = FunctionalANOVA(X=X,y=y, degree=1)
-
+print(anova.importances)
 ```
 
 # Uninstallation
