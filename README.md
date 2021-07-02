@@ -6,8 +6,14 @@ This library supports Python3.7+.
 Installation requires [pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/) and [sklearn](https://scikit-learn.org/stable/). These dependencies are written in `requirements.txt`.
 
 # Installation
+Install the library by git-cloning the repository.   
 ```sh
 python setup.py install
+```   
+
+Alternatively, you can install the library without git-cloning the repository by entering the following command.   
+```sh
+pip install git+https://github.com/bird-initiative/fANOVA.git
 ```
 
 # Example
