@@ -1,12 +1,12 @@
 # fANOVA
-fANOVA implementation.
+A [functional ANOVA](./1710.04725.pdf) is a method of quantifying the sensitivity of input variables to output variables in a system model.
 
 This library supports Python3.7+.
 
 Installation requires [pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/) and [sklearn](https://scikit-learn.org/stable/). These dependencies are written in `requirements.txt`.
 
 # Installation
-Install the library by git-cloning the repository.   
+Install the library by git-cloning this repository.   
 ```sh
 python setup.py install
 ```   
