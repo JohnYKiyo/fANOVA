@@ -27,7 +27,7 @@ import seaborn as sns
 
 import sklearn.datasets
 
-from functionalANOVA.fanova import FunctionalANOVA
+from functionalanova.fanova import FunctionalANOVA
 
 # dataset
 X = pd.DataFrame(sklearn.datasets.load_iris()['data'],columns=sklearn.datasets.load_iris()['feature_names'])
