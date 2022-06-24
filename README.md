@@ -40,5 +40,5 @@ print(anova.importances)
 
 # Uninstallation
 ```sh
-pip uninstall functionalANOVA
+pip uninstall functionalanova
 ```
