@@ -15,9 +15,9 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 
-DISTNAME = 'fanova'
+DISTNAME = 'functionalanova'
 AUTHOR = 'Yu Kiyokawa'
-AUTHOR_EMAIL = 'y-kiyokawa@bird-initiative.com'
+AUTHOR_EMAIL = 'dummn.marionette.7surspecies@gmail.com'
 LICENSE = 'MIT License'
 VERSION = '0.1.0'
 KEYWORDS = 'anova'
