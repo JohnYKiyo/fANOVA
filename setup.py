@@ -15,7 +15,7 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 
-DISTNAME = 'functionalANOVA'
+DISTNAME = 'functional-anova'
 AUTHOR = 'Yu Kiyokawa'
 AUTHOR_EMAIL = 'y-kiyokawa@bird-initiative.com'
 LICENSE = 'MIT License'
